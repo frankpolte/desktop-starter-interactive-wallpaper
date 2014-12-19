@@ -1,0 +1,16 @@
+﻿{
+   "menubar":[
+      {
+         "title":"Favorite",
+         "page":"fav"
+      },
+      {
+         "title":"Office",
+         "page":"office"
+      },
+      {
+         "title":"Games",
+         "page":"games"
+      }
+   ]
+}

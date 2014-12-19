@@ -1,0 +1,54 @@
+﻿{
+   "description":"Favorite Apps",
+   "buttons":[
+    {
+         "logo_letter":"D",
+         "logo_word":"Dateien",
+         "logo_link":"cmd::thunar",
+         "logo_bg_color":"rgb(108, 191, 51)",
+         "logo_tip" :"Dateimanager"
+      },
+      {
+         "logo_letter":"B",
+         "logo_word":"Internet",
+         "logo_link":"cmd::defaultBrowser",
+         "logo_bg_color":"rgb(173, 79, 164)",
+         "logo_tip" :"Internet Browser"
+      },
+      {
+         "logo_letter":"X",
+         "logo_word":"Terminal",
+         "logo_link":"cmd::xfce4-terminal",
+         "logo_bg_color":"rgb(251, 37, 28)",
+         "logo_tip" :"Kommandozeileninterpreter"
+      },
+      {
+         "logo_letter":"Gi",
+         "logo_word":"Bildbearbeitung",
+         "logo_link":"cmd::gimp",
+         "logo_bg_color":"rgb(255,124,27)",
+         "logo_tip" :"GIMP Graphikbearbeitung"
+      },
+      {
+         "logo_letter":"Pl",
+         "logo_word":"Math Plot",
+         "logo_link":"cmd::kmplot",
+         "logo_bg_color":"rgb(255,124,27)",
+         "logo_tip" :"KmPlot  mathematische Funktionen grafisch dargestellt"
+      },
+      {
+         "logo_letter":"Gd",
+         "logo_word":"Editor",
+         "logo_link":"cmd::gedit",
+         "logo_bg_color":"rgb(0,179,177)",
+         "logo_tip" :"gedit Texteditor"
+      },
+      {
+         "logo_letter":"G",
+         "logo_word":"git GUI",
+         "logo_link":"cmd::gitg",
+         "logo_bg_color":"rgb(0,179,177)",
+         "logo_tip" :"gitg - Grafische Oberfläche für git"
+      }
+   ]
+}

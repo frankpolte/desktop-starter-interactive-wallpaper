@@ -1,0 +1,26 @@
+﻿{
+   "description":"Games",
+   "buttons":[
+    {
+         "logo_letter":"S",
+         "logo_word":"Sudoku",
+         "logo_link":"cmd::gnome-sudoku",
+         "logo_bg_color":"rgb(108, 191, 51)",
+         "logo_tip" :"Sudoku game of the Gnome project"
+      },
+      {
+         "logo_letter":"M",
+         "logo_word":"Mahjongg",
+         "logo_link":"cmd::gnome-mahjongg",
+         "logo_bg_color":"rgb(173, 79, 164)",
+         "logo_tip" :"Mahjongg game of the Gnome project"
+      },
+      {
+         "logo_letter":"Mi",
+         "logo_word":"Mines",
+         "logo_link":"cmd::gnome-mines",
+         "logo_bg_color":"rgb(251, 37, 28)",
+         "logo_tip" :"Mines game of the Gnome project"
+      }
+   ]
+}

@@ -1,0 +1,40 @@
+﻿{
+   "description":"Hier kannst du die wichtigsten vorinstallierten Apps finden",
+   "buttons":[
+      {
+         "logo_letter":"Wr",
+         "logo_word":"Textverarbeitung",
+         "logo_link":"cmd::lowriter",
+         "logo_bg_color":"rgb(0, 162, 214)",
+         "logo_tip" :"Libre Office Writer Textverarbeitung"
+      },
+      {
+         "logo_letter":"Ca",
+         "logo_word":"Tabellenkalk.",
+         "logo_link":"cmd::localc",
+         "logo_bg_color":"rgb(0, 162, 214)",
+         "logo_tip" :"Libre Office Calc Tabellenkalkulation"
+      },
+      {
+         "logo_letter":"Im",
+         "logo_word":"Präsentation",
+         "logo_link":"cmd::loimpress",
+         "logo_bg_color":"rgb(0, 162, 214)",
+         "logo_tip" :"Libre Office Impress Präsentationswerkzeug"
+      },
+      {
+         "logo_letter":"L",
+         "logo_word":"LyX Editor",
+         "logo_link":"cmd::lyx",
+         "logo_bg_color":"rgb(255,222,0)",
+         "logo_tip" :"LyX LaTeX Editor"
+      },
+      {
+         "logo_letter":"G",
+         "logo_word":"LaTeX Editor",
+         "logo_link":"cmd::gummi",
+         "logo_bg_color":"rgb(255,222,0)",
+         "logo_tip" :"Gummi LaTeX Editor"
+      }
+   ]
+}
