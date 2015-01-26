@@ -7,9 +7,6 @@ config.Top = 0;
 config.defaultBrowser = 'firefox';
 config.defaultFileManager = 'thunar';
 
-var latestNewsDate = 0;
-var lastNewsSeen = 0;
-var newNewsCtn = 0;
 
 // init skrollr
 skrollr.init({
@@ -125,47 +122,5 @@ function initByJson(data) {
     // bind scrolling on click
     initNavScrolling();
 
-    // update news, every five seconds
-    setTimeout(updateNews, 1000);
-    setInterval(updateNews, 5000);
 }
 
-function updateNews() {
-    $('#news_').remove();
-    newNewsCtn = 0;
-
-    $('#news').append('<div id="news_" class="rssFeed"></div>');
-    $.ajaxSetup({ cache: false });
-    $.get("feed.rss", function(data) {
-        var $xml = $(data);
-        $('#news_').append("<ul>");
-        $('#news_').append("<div class='rssBody'>");
-        $('.rssBody').append("<ul class='feedlist'>");
-        $xml.find("item").each(function() {
-            var $this = $(this),
-                item = {
-                    title: $this.find("title").text(),
-                    link: $this.find("rsslink").text(),
-                    description: $this.find("description").text(),
-                    pubDate: $this.find("pubDate").text(),
-                    author: $this.find("author").text()
-            }
-            $('.feedlist').append("<li class='rssRow odd'><h4><a href='cmd::defaultBrowser "+item.link+"'>"+item.title+"</a></h4><div>"+item.pubDate+"</div><p>"+item.description+"</p></li>");
-
-            // update latestNewsDate
-            if (Date.parse(item.pubDate) > latestNewsDate) {
-                latestNewsDate = Date.parse(item.pubDate);
-            }
-
-            // check for any new unseen news
-            if (Date.parse(item.pubDate) > lastNewsSeen) {
-                newNewsCtn++;
-            }
-        });
-        $('.rssBody').append("</div>");
-
-        if (newNewsCtn > 0) {
-            $('#link_news').text("News (" + newNewsCtn + ")");
-        }
-    });
-}
